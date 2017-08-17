@@ -4,7 +4,6 @@ import {GithubToken} from './Constants';
 
 let API = {
     fetchIssues(limit){
-        console.log("1. In API");
         ajax({
             method: 'post',
             url: 'https://api.github.com/graphql',

@@ -5,7 +5,7 @@ import {IntlProvider} from 'react-intl';
 
 ReactDOM.render(
     <IntlProvider locale='en'>
-        <Main limit={20} />
+        <Main limit={20} refreshRate={5000} />
     </IntlProvider>,
     document.getElementById('react')
 );  

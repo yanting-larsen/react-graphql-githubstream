@@ -10,7 +10,6 @@ class IssueStore extends EventEmitter {
         AppDispatcher.register(action => {
             switch(action.actionType) {
                 case ActionTypes.RECEIVE_ISSUES:
-                    console.log('3. In store');
                     _issues = action.issues;
                     this.emit('change');
                     break;
