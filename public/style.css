@@ -1,0 +1,172 @@
+
+body {
+    font: 15px/1.5 'Roboto', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#f4f4f4;
+}
+
+/* Global */
+
+#branding {
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    background-color:  #605f5f;
+    color: #ffffff;
+    border-bottom: #e8491d 3px solid;
+}
+
+#branding h1 {
+    margin: 0;
+}
+#branding .highlight {
+    color: #e9491d;
+    font-weight: bold;
+}
+
+dl {
+    margin: 0;
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    border-bottom: #ddd 10px solid;
+    border-top: #eee 20px solid;
+}
+
+
+ol li:nth-child(odd) {
+    background-color: #eee;
+}
+
+ol li:nth-child(even) {
+    background-color: #ddd;
+}
+
+ol li .content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+li img {
+    width: 150px;
+    float: left;
+    margin-right:10px;
+    border: 2px solid #f4f4f4;
+    padding: 2px;
+    margin-bottom: 5px;
+    clear: left;
+
+}
+
+.reponame a {
+    font-size: 15px;
+    color: #636363;
+    margin-left: 12px;
+}
+
+.title a {
+    font-size: 25px;
+    font-weight: thin;
+    color: #949596;
+
+}
+
+.date {
+    line-height: 2;
+    font-size: 12px;
+    color: #949596;
+}
+
+dd.text {
+    font-style: thin;
+    height: 3em;
+    overflow: hidden;
+    color: #636363
+}
+
+dd.text:hover {
+    min-height: 3em;
+    height: auto;
+    font-size: 20px;
+}
+
+li {
+    overflow: hidden;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 0;
+    background: #000000;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+/* Repo tag */
+.reponame a {
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 1em;
+	background-color: #f48869;
+	border-radius: 0 3px 3px 0;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.reponame a::before {
+	position: absolute;
+	top: 0;
+	left: -15px;
+	content: '';
+	width: 0;
+	height: 0;
+	border-color: transparent #f48869 transparent transparent;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.reponame a::after {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-top: -3px;
+	background-color: #fff;
+	border-radius: 100%;
+}
+.reponame span {
+	display: block;
+	max-width: 100px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.reponame a:hover {
+	background-color: #555;
+	color: #fff;
+}
+.reponame a:hover::before {
+	border-right-color: #555;
+}
+
