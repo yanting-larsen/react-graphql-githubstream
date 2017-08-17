@@ -46,7 +46,7 @@ class Main extends React.Component {
 
             return <li key={issue.id}>
                     <div className='content'>
-                        <div><a href={issue.author.url}><img src={issue.author.avatarUrl}/></a></div>
+                        <div className='author'><a href={issue.author.url}><img src={issue.author.avatarUrl}/></a></div>
                         <dl>
                         <dt className='title'><a href={issue.url}><span>{issue.title}</span></a></dt>
                         <dd className='reponame'><a href={issue.repository.url}>{issue.repository.name}</a></dd>

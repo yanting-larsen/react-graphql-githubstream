@@ -69,6 +69,12 @@ Each version can be accessed by checking out the corresponding tag
 
 ![screenshot from web](docs/version_tags.png)
 
+# How to run tests
+
+- Run once: `npm test`
+- Watch: `npm test -- --watch`
+
+![screenshot from web](docs/unit_tests.png)
 
 # Result
 
